@@ -37,3 +37,15 @@
     line-height: 1.71;
   }
 }
+
+.fuatures__icons {
+  width: 270px;
+  height: 120px;
+  background-color: var(--color-gray-bgc);
+  margin-bottom: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}

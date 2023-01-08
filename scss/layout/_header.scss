@@ -37,7 +37,6 @@
   color: var(--color-primery);
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__link--current {
@@ -79,8 +78,7 @@
   fill: var(--color-secondary);
   gap: 10px;
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__link:hover,

@@ -106,8 +106,8 @@
   border-color: var(--color-accent);
 }
 
-.modal__input:focus + .form-icon,
-.fmodal__input:hover + .form-icon {
+.modal__input:focus + .modal__icon,
+.modal__input:hover + .modal__icon {
   fill: var(--color-accent);
 }
 
@@ -135,6 +135,7 @@
   margin-bottom: 16px;
 
   resize: none;
+  outline: none;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -148,6 +149,11 @@
   margin-bottom: 30px;
   display: flex;
   margin-left: 12px;
+
+  &__link {
+    color: var(--color-accent);
+    text-decoration: underline;
+  }
 }
 
 .checkbox__title {
@@ -162,12 +168,15 @@
 
 .checkbox__input {
   appearance: none;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox__icon {
   position: absolute;
 
   margin: 4px 7px 0 0;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-check {
